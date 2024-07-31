@@ -23,7 +23,7 @@ def load_split_dataset(train_dataset_s3_path, validation_dataset_s3_path):
     dataset_training_df = pd.DataFrame(dataset['train'])
     dataset_validation_df = pd.DataFrame(dataset['test'])
 
-    dataset_training_df = dataset_training_df.sample(n=9500, random_state=42, ignore_index=True)
+    dataset_training_df = dataset_training_df.sample(n=10000, random_state=42, ignore_index=True)
 
     # prepare training dataset to fit autopilot job.
     fields = ['question', 'correct_answer', 'support']
