@@ -1,3 +1,3 @@
 fmeval==1.0.3
-sagemaker==2.226.1
+sagemaker==2.256.0
 datasets
